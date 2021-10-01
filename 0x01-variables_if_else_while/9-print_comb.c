@@ -13,16 +13,13 @@ int main(void)
 int c;
 for (c = 48 ; c <= 57 ; c++)
 {
-if (c == 57)
-{
 putchar (c);
-}
-else
+if (c <= 56)
 {
-putchar (c);
 putchar (44);
 putchar (32);
 }
 }
+putchar (10)
 return (0);
 }
