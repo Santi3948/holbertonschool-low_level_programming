@@ -11,7 +11,7 @@
 int main(void)
 {
 int c;
-char sal = '\n';
+int sal = 10;
 for (c = 48 ; c <= 57 ; c++)
 {
 putchar (c);
