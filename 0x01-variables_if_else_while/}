@@ -10,12 +10,12 @@
 */
 int main(void)
 {
-char c;
-char sal = '\n';
-for (c = 'a' ; c <= 'z' ; c++)
-{
-putchar (c);
-}
-putchar(sal);
-return (0);
+	  char c;
+	  char sal = '\n';
+for (c = 'a' ; c <= 'z' ; c++)	
+	  {
+		    putchar (c);
+	  }
+	  putchar(sal);
+	      return (0);
 }
