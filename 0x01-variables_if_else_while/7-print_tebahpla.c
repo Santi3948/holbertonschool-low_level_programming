@@ -10,9 +10,9 @@
 */
 int main(void)
 {
-char c;
-char sal = '\n';
-for (c = 'z' ; c <= 'a' ; c--)
+int c;
+int sal = 10;
+for (c = 122 ; c <= 97 ; c--)
 {
 putchar (c);
 }
