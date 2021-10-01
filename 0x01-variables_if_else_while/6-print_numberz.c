@@ -10,9 +10,9 @@
 */
 int main(void)
 {
-char c;
-char sal = '\n';
-for (c = 0 ; c <= 9 ; c++)
+int c;
+int sal = 10;
+for (c = 48 ; c <= 57 ; c++)
 {
 putchar(c);
 }
