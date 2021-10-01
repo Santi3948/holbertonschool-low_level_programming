@@ -4,6 +4,10 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+* main - pos neg zero
+* Return: pos neg zero
+*/
 int main(void)
 {
 		int n;
