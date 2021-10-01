@@ -14,7 +14,7 @@ char c;
 char sal = '\n';
 for (c = 0 ; c <= 9 ; c++)
 {
-printf("%d",c);
+printf("%d", c);
 }
 putchar(sal);
 return (0);
