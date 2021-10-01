@@ -11,13 +11,18 @@
 int main(void)
 {
 int c;
-int sal = 10;
 for (c = 48 ; c <= 57 ; c++)
+{
+if (c == 57)
+{
+putchar (c);
+{
+else
 {
 putchar (c);
 putchar (44);
 putchar (32);
 }
-putchar(sal);
+}
 return (0);
 }
