@@ -23,7 +23,7 @@ for (f = g ; f <= 57;)
 putchar (c);
 putchar (e);
 putchar (f);
-if (c < 57)
+if (c < 55)
 {
 putchar (44);
 putchar (32);
