@@ -26,7 +26,7 @@ putchar (32);
 }
 e++;
 }
-d--;
+d++;
 }
 putchar (10);
 return (0);
