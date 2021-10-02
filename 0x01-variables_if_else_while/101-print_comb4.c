@@ -11,10 +11,9 @@
 int main(void)
 {
 	int c;
-	int d = 49;
 	int e;
 	int f;
-	int g;
+	int g = 50;
 for (c = 48 ; c <= 55 ; c++)
 {
 for (e = 49 ; e <= 57 ;)
