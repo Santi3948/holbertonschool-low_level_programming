@@ -14,9 +14,10 @@ int main(void)
 	int e;
 	int f;
 	int g = 50;
+	int h = 49;
 for (c = 48 ; c <= 55 ; c++)
 {
-for (e = 49 ; e <= 57 ; e++)
+for (e = h ; e <= 56 ;)
 {
 for (f = g ; f <= 57;)
 {
@@ -31,7 +32,9 @@ putchar (32);
 f++;
 }
 g++;
+e++;
 }
+h++;
 }
 putchar (10);
 return (0);
