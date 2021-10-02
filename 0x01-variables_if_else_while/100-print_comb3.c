@@ -21,9 +21,10 @@ putchar (c);
 putchar (e);
 if (c < 56)
 {
-putchar (42);
+putchar (44);
 putchar (32);
 }
+e++;
 }
 d--;
 }
