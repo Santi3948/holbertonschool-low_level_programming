@@ -16,9 +16,9 @@ int main(void)
 	int g = 50;
 for (c = 48 ; c <= 55 ; c++)
 {
-for (e = 49 ; e <= 57 ;)
+for (e = 49 ; e <= 57 ; e++)
 {
-for (f = g ; f <= 57; f++)
+for (f = g ; f <= 57;)
 {
 putchar (c);
 putchar (e);
