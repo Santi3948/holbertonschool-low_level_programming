@@ -13,11 +13,13 @@ int main(void)
 	int c;
 	int e;
 	int f;
+	int a = 0;
+	int b = 0;
 for (c = 48 ; c <= 55 ; c++)
 {
-for (e = 49 ; e <= 56 ; e++)
+for (e = 49 + a ; e <= 56 ; e++)
 {
-for (f = 50 ; f <= 57; f++)
+for (f = 50 + b ; f <= 57; f++)
 {
 putchar (c);
 putchar (e);
@@ -28,7 +30,9 @@ putchar (44);
 putchar (32);
 }
 }
+b++;
 }
+a++;
 }
 putchar (10);
 return (0);
