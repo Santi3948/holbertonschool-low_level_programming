@@ -11,12 +11,13 @@ int d;
 if (c >= 0)
 {
 	d = (c % 10);
-	_putchar('d');
+	_putchar(d);
 	return (d);
 }
 else
 {
 d = ((c * (-1)) % 10);
+_putchar(d);
 return (d);
 }
 }
