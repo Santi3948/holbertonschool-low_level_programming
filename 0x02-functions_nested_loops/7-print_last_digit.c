@@ -7,17 +7,7 @@
 */
 int print_last_digit(int c)
 {
-int d;
-if (c >= 0)
-{
-	d = (c % 10);
-	_putchar(d);
-	return (d);
-}
-else
-{
-d = ((c * (-1)) % 10);
-_putchar(d);
-return (d);
-}
+int d = (c % 10);
+_putchar('0' + r);
+return ('0' + r);
 }
