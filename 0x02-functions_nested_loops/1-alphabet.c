@@ -3,7 +3,7 @@
 
 /* betty style doc for function main goes there */
 /**
-* main - print_alphabet
+* print_alphabet - alphabet
 * Return: alphabet
 */
 void print_alphabet(void)
