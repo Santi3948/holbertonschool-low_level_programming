@@ -2,7 +2,7 @@
 /**
 * _islower - writes the character c to stdout
 * Return: upper or lower
-* @c: variable 
+* @c:variable 
 */
 int _islower(int c)
 {
