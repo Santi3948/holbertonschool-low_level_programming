@@ -19,7 +19,6 @@ else
 {
 _putchar('-');
 }
-_putchar(',');
-_putchar(' ');
 return n;
+_putchar(' ');
 }
