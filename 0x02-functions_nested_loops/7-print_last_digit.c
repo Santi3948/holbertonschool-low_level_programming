@@ -15,7 +15,7 @@ return (d);
 }
 else
 {
-int d = (d * (-1));
+d = (d * (-1));
 _putchar('0' + d);
 return (d);
 }
