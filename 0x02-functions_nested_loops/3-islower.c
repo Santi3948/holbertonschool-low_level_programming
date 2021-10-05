@@ -2,6 +2,7 @@
 /**
 * _islower - writes the character c to stdout
 * Return: upper or lower
+* c - xdd
 */
 int _islower(int c)
 {
