@@ -3,15 +3,15 @@
 
 /* betty style doc for function main goes there */
 /**
-* main - alphabet
+* main - print_alphabet
 * Return: alphabet
 */
 void print_alphabet(void)
 {
-	char a;
-	for (a = 'a'; a <= 'z'; a++)
-	{
-	_putchar(a);
-	}
-	_putchar('\n');
+char a;
+for (a = 'a'; a <= 'z'; a++)
+{
+_putchar(a);
+}
+_putchar('\n');
 }
