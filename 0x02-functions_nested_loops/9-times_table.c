@@ -18,14 +18,14 @@ for (a = 1; a <= 9; a++)
 if (a < 9)
 {
 c = c + c;
-_putchar("%d", c);
+_putchar("%c", c);
 _putchar(',');
 _putchar(' ');
 }
 else
 {
 c = c + c;
-_putchar("%d", c);
+_putchar("%c", c);
 }
 }
 _putchar('\n');
