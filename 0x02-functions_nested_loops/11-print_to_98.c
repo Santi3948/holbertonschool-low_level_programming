@@ -18,6 +18,10 @@ for (a = n; a >= 98; a--)
 	_putchar(',');
 	_putchar(' ');
 	}
+	else
+	{
+		 _putchar(' ');
+	}
 }
 }
 else if (n < 98)
@@ -29,6 +33,10 @@ for (a = n; a <= 98; a++)
 	{
 	_putchar(',');
 	_putchar(' ');
+	}
+	else
+	{
+		_putchar(' ');
 	}
 }
 }
