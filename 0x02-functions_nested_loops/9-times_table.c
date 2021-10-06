@@ -25,7 +25,7 @@ _putchar(' ');
 else
 {
 c = c + c;
-_putchar('0' + c);
+_putchar(c);
 }
 }
 _putchar('\n');
