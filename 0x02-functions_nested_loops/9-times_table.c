@@ -16,9 +16,10 @@ c = c + 1;
 for (a = 1; a <= 9; a++)
 {
 c = c + c;
-_putchar('c');
+_putchar(c);
 _putchar(',');
 _putchar(' ');
 }
+_putchar('\n');
 }
 }
