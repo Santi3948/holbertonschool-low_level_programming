@@ -1,33 +1,43 @@
 #include "main.h"
 /**
- * times_table - writes the character c to stdout
- * Return: On success 1.
- */
+ *times_table - prints the 9 times table
+ * Return: void
+*/
 void times_table(void)
 {
-int a, b, c;
-c = -1;
-for (b = 1; b <= 10; b++)
-{
-_putchar('0');
-_putchar(',');
-_putchar(' ');
-c = c + 1;
-for (a = 1; a <= 9; a++)
-{
-if (a < 9)
-{
-c = c + c;
-_putchar('0' + c);
-_putchar(',');
-_putchar(' ');
-}
-else
-{
-c = c + c;
-_putchar(c);
-}
-}
-_putchar('\n');
-}
+	int x;
+	int y;
+
+	for (x = 0 ; x < 10 ; x++)
+	{
+		for (y = 0 ; y < 10 ; y++)
+		{
+			if (y == 0)
+			{
+				_putchar(x * y + '0');
+			}
+			else if (a * b >= 10)
+			{
+				_putchar(' ');
+				_putchar(x * y / 10 + '0');
+				_putchar(x * y % 10 + '0');
+			}
+			else
+			{
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(x * y + '0');
+			}
+
+			if (y == 9)
+			{
+				_putchar('\n');
+			}
+			else
+			{
+				_putchar(',');
+			}
+
+		}
+	}
 }
