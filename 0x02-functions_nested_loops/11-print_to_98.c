@@ -13,7 +13,7 @@ if (n >= 98)
 for (a = n; a >= 98; a--)
 {
 	printf("%d, ", a);
-	if (n != 98)
+	if (a != 98)
 	{
 	_putchar(',');
 	_putchar(' ');
@@ -25,7 +25,7 @@ else if (n < 98)
 for (a = n; a <= 98; a++)
 {
 	printf("%d, ", n);
-	if (n != 98)
+	if (a != 98)
 	{
 	_putchar(',');
 	_putchar(' ');
