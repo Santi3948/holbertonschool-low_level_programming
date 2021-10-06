@@ -11,7 +11,7 @@ if (n >= 98)
 {
 for (a = n; a >= 98; a--)
 {
-	_putchar($a);
+	printf("%d, ", a);
 	if (n != 98)
 	{
 	_putchar(',');
@@ -23,7 +23,7 @@ else if (n < 98)
 {
 for (a = n; a <= 98; a++)
 {
-	_putchar($a);
+	printf("%d, ", n);
 	if (n != 98)
 	{
 	_putchar(',');
