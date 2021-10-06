@@ -15,10 +15,18 @@ _putchar(' ');
 c = c + 1;
 for (a = 1; a <= 9; a++)
 {
+if (a < 9)
+{
 c = c + c;
 _putchar(c);
 _putchar(',');
 _putchar(' ');
+}
+else
+{
+c = c + c;
+_putchar(c);
+}
 }
 _putchar('\n');
 }
