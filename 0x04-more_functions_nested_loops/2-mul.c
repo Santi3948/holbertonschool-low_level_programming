@@ -1,7 +1,8 @@
 #include "main..h"
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * mul - writes the character c to stdout
+ * @a: The character to print
+ * @b: asdf
  * Return: On success 1.
  */
 int mul(int a, int b)
