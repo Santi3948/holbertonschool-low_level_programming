@@ -7,7 +7,7 @@
 int FizzBuzz(void)
 {
 int a;
-for (a = 1; a <= 100)
+for (a = 1; a <= 100; a++)
 {
 if ((a % 3) == 0)
 {
@@ -23,7 +23,7 @@ printf("FizzBuzz");
 }
 else
 {
-printf("%d", a);
+return (a);
 }
 }
 }
