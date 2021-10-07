@@ -1,4 +1,4 @@
-#includ.h"
+#include "main.h"
 /**
  * mul - writes the character c to stdout
  * @a: The character to print
