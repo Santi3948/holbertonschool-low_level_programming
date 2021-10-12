@@ -14,11 +14,21 @@ while (str[a] != 0)
 {
 a++;
 }
+if (a % 2 == 0)
+{
 a = (a / 2);
 while (str[a] != 0)
 {
 _putchar(str[a]);
 a++;
+}
+}else{
+	a = (a / 2);
+	while (str[a + 1] != 0)
+	{
+		_putchar(str[a + 1]);
+		a++;
+	}
 }
 _putchar('\n');
 }
