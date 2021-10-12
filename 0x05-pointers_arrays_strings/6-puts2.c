@@ -7,7 +7,7 @@
 void puts2(char *str)
 {
 int a = 0;
-while (*(str + a))
+while (*(str + a) != 0)
 {
 _putchar(*(str + a));
 a = a + 2;
