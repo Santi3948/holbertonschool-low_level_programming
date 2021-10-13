@@ -35,6 +35,7 @@ for (j = 0; j < (a / 2) ; j++)
 }
 else
 {
+a = a;
 b = a;
 for (j = 0; j <= (a / 2) ; j++)
 {
