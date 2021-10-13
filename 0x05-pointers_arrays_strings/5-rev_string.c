@@ -13,6 +13,7 @@ int i = 0;
 int j;
 int a = 0;
 char c;
+int b;
 while (s[i] != 0)
 {
 	a++;
@@ -21,12 +22,13 @@ while (s[i] != 0)
 if (a > 0)
 {
 a = a - 1;
+b = a;
 for (j = 0; j < (a / 2) ; j++)
 {
-	c = s[a];
-	s[a] = s[j];
+	c = s[b];
+	s[b] = s[j];
 	s[j] = c;
-	a--;
+	b--;
 }
 }
 }
