@@ -36,7 +36,7 @@ for (j = 0; j < (a / 2) ; j++)
 else
 {
 b = a - 1;
-for (j = 0; j <= (a / 2) ; j++)
+for (j = 0; j < (a / 2) ; j++)
 {
 	c = s[b];
 	s[b] = s[j];
