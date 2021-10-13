@@ -21,14 +21,27 @@ while (s[i] != 0)
 }
 if (a > 0)
 {
-a = a - 1;
-b = a;
+	a = a - 1;
+	b = a;
+if (a % 2 != 0)
+{
 for (j = 0; j < (a / 2) ; j++)
 {
 	c = s[b];
 	s[b] = s[j];
 	s[j] = c;
 	b--;
+}
+}
+else
+{
+for (j = 0; j <= (a / 2) ; j++)
+{
+	c = s[b];
+	s[b] = s[j];
+	s[j] = c;
+	b--;
+}
 }
 }
 }
