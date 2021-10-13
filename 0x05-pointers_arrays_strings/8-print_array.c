@@ -19,4 +19,8 @@ printf("%d, ", a[i]);
 }
 printf("%d\n", a[i]);
 }
+else
+{
+	printf("\n");
+}
 }
