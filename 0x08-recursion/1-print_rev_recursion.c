@@ -14,8 +14,5 @@ if (s[i] != 0)
 {
 	_print_rev_recursion(&s[i + 1]);
 	_putchar(s[i]);
-} else
-{
-	return ();
 }
 }
