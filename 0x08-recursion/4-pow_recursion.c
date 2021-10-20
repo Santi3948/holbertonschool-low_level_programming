@@ -16,7 +16,7 @@ z = x * _pow_recursion(x, y - 1);
 return (z);
 }
 else if (y == 0)
-}
+{
 return (1);
 }
 else
