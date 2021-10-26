@@ -4,7 +4,7 @@
 /**
  * create_array - check the code
  * @size: size
- * @c: c 
+ * @c: c
  * Return: pointer to d.
  */
 char *create_array(unsigned int size, char c)
