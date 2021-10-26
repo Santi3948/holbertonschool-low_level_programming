@@ -2,8 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - check the code
- *
+ * create_array - check the code
+ * @size: size
+ * @c: c 
  * Return: pointer to d.
  */
 char *create_array(unsigned int size, char c)
