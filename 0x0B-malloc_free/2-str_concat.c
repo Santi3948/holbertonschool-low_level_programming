@@ -16,6 +16,10 @@ char *str_concat(char *s1, char *s2)
 	{
 	return (NULL);
 	}
+	if (s1 == NULL)
+	*s1 = "";
+	if (s2 == NULL)
+	*s2 = "";
 	for (i = 0; s1[i]; i++)
 	n = n + 1;
 	for (j = 0; s2[j]; j++)
