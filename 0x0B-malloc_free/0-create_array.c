@@ -1,6 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * main - check the code
+ *
+ * Return: pointer to d.
+ */
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
