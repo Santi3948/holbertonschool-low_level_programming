@@ -39,7 +39,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (d = c; d < (c + n); d++)
 	con[d] = s2[d - c];
 
-	cond[d] = 0;
+	con[d] = 0;
 
 	return (con);
 }
