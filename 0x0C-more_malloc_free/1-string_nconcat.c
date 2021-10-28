@@ -33,11 +33,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (con == NULL)
 	return (NULL);
 
-	for (c = 0; c <= lon1; c++)
+	for (c = 0; c < lon1; c++)
 	con[c] = s1[c];
 
-	for (d = c; d <= (c + n); d++)
+	for (d = c; d < (c + n); d++)
 	con[d] = s2[d - c];
+
+	cond[d] = 0;
 
 	return (con);
 }
