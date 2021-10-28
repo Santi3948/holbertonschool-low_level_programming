@@ -1,5 +1,10 @@
-int _atoi(char *s)
+#include <stdio.h>
+/**
+ * _atoi - char to int
+ * @s: pointer
+ *Return: 0
+ */
+int _atoi(char *s __attribute__((unused)))
 {
-	(void)s;
 	return (0);
 }
