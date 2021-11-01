@@ -8,23 +8,26 @@
   */
 char *_strdup(char *str)
 {
-	unsigned int i, n = 0, g;
-	char *d;
+	unsigned int pos, len;
+	char *dup;
 
-	if (str == NULL)
-	{
-	return (NULL);
-	}
-	for (i = 0; str[i]; i++)
-	n = n + 1;
-	d = malloc(sizeof(char) * n + 1);
-	if (d == NULL)
-	{
+	if (!str)
 		return (NULL);
+
+	for (len = 0; str[len] != 0;)
+		len++;
+
+	dup = (char *)malloc((sizeof(char) * len + 1));
+
+	if (dup == NULL)
+		return (NULL);
+
+	for (pos = 0; pos <= len; pos++)
+	{
+		dup[pos] = str[pos];
 	}
-	for (g = 0; g <= n - 1; g++)
-	d[g] = str[g];
-	return (d);
+
+	return (dup);
 }
 /**
  * new_dog - init
