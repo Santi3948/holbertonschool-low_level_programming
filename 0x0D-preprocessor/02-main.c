@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * main - chi
- * Return: void
+ * return: void
  */
 int main(void)
 {
