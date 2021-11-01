@@ -1,11 +1,11 @@
 #include "dog.h"
 /**
- * init_dog - eadsc
- * @d: qwedc
- * @name: awdc
- * @age: asd
- * @owner: adad
- * Return: sadff
+ * init_dog - init
+ * @d: d
+ * @name: name
+ * @age: age
+ * @owner: owner
+ * Return: void
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
