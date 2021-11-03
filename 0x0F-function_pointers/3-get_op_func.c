@@ -21,7 +21,7 @@ int (*get_op_func(char *s))(int a, int b)
 	int i;
 
 i = 0;
-while (i < 4 && ops[i].op[0] != s[0])
+while (i <= 4 && ops[i].op[0] != s[0])
 {
 	i++;
 }
