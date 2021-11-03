@@ -13,12 +13,12 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	if (size <= 0)
 	return (-1);
-	if (array || cmp)
+	if (array && cmp)
 	{
 	for (i = 0; i < size ; i++)
 	{
 	x = cmp(array[i]);
-	if (x == 1)
+	if (x != 0)
 	return (i);
 	}
 	}
