@@ -6,8 +6,7 @@
 /**
  * get_op_func - print name
  * @s: array
- * @a: size
- * @b: action
+ * Return: asd
  */
 int (*get_op_func(char *s))(int a, int b)
 {
@@ -21,16 +20,15 @@ int (*get_op_func(char *s))(int a, int b)
 	};
 	int i;
 
-if (s[0] != '+' && s[0] != '-' && s[0] != '*'
-&& s[0] != '/' && s[0] != '%' && !s[1])
-{
-printf("Error\n");
-exit(99);
-}
 i = 0;
 while (i < 4 && ops[i].op[0] != s[0])
 {
 	i++;
+}
+if (i > 4)
+{
+	printf("Error\n");
+	exit(99);
 }
 return (ops[i].f);
 }
