@@ -25,7 +25,7 @@ while (i <= 4 && ops[i].op[0] != s[0])
 {
 	i++;
 }
-if (i > 4 && s[1])
+if (i > 4 || s[1])
 {
 	printf("Error\n");
 	exit(99);
