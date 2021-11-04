@@ -13,17 +13,15 @@ va_list ap;
 unsigned int i;
 
 va_start(ap, n);
-for (i = 0; i < n - 1 ; i++)
+for (i = 0; i < n ; i++)
 {
-if (separator != NULL)
+if (i != n - 1 && separator != NULL)
 {
 printf("%d%s", va_arg(ap, int), separator);
-}
-else
+}else
 {
-	printf("%d", va_arg(ap, int));
-}
-}
 printf("%d\n", va_arg(ap, int));
+}
+}
 va_end(ap);
 }
