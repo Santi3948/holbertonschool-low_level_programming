@@ -18,7 +18,8 @@ for (i = 0; i < n ; i++)
 if (i != n - 1 && separator != NULL)
 {
 printf("%d%s", va_arg(ap, int), separator);
-}else
+}
+else
 {
 printf("%d\n", va_arg(ap, int));
 }
