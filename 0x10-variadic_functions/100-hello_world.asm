@@ -1,16 +1,18 @@
-; hello-DOS.asm - single-segment, 16-bit "hello world" program
-;
-; assemble with "nasm -f bin -o hi.com hello-DOS.asm"
+global _start
 
-    org  0x100        ; .com files always start 256 bytes into the segment
+section .text
 
-    ; int 21h is going to want...
+_start:
+  mov rax, 1        ; write(
+  mov rdi, 1        ;   STDOUT_FILENO,
+  mov rsi, msg      ;   "Hello, world!\n",
+  mov rdx, msglen   ;   sizeof("Hello, world!\n")
+  syscall           ; );
 
-    mov  dx, msg      ; the address of or message in dx
-    mov  ah, 9        ; ah=9 - "print string" sub-function
-    int  0x21         ; call dos services
+  mov rax, 60       ; exit(
+  mov rdi, 0        ;   EXIT_SUCCESS
+  syscall           ; );
 
-    mov  ah, 0x4c     ; "terminate program" sub-function
-    int  0x21         ; call dos services
-
-    msg  db 'Hello, World!', 0x0d, 0x0a, '$'   ; $-terminated message
+section .rodata
+  msg: db "Hello, world!", 10
+  msglen: equ $ - msg
