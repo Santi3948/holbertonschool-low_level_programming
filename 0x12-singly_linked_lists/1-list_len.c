@@ -8,12 +8,12 @@
  */
 size_t print_list(const list_t *h)
 {
-        size_t i = 0;
-        while (h != NULL)
-        {
-                i++;
-                h = h->next;
+	size_t i = 0;
 
-        }
-        return (i);
+	while (h != NULL)
+	{
+		i++;
+		h = h->next;
+	}
+	return (i);
 }
