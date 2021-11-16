@@ -1,7 +1,8 @@
 #include "lists.h"
 /**
- * free_listint -  free all the elements of the list
+ * pop_listint -  free all the elements of the list
  * @head: the first element of the list
+ * Return: i
  */
 int pop_listint(listint_t **head)
 {
@@ -14,7 +15,8 @@ int pop_listint(listint_t **head)
 	aux = *head;
 	*head = (*head)->next;
 	free(aux);
-	} else
+	}
+	else
 	{
 		return (0);
 	}
