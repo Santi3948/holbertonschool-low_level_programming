@@ -1,9 +1,9 @@
 #include "main.h"
-#include "main.h"
 /**
-  * print_binary - prints the binary representation of a number
+  * get_bit - prints the binary representation of a number
   * @n: the number
-  * Return: void
+  * @index: ind
+  * Return: int
   */
 int get_bit(unsigned long int n, unsigned int index)
 {
@@ -18,6 +18,6 @@ int get_bit(unsigned long int n, unsigned int index)
 	}
 	if (index > i)
 		return (-1);
-	
-	return ((n >> index) & 1); 
+
+	return ((n >> index) & 1);
 }
