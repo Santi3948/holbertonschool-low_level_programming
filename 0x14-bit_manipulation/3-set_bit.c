@@ -1,8 +1,8 @@
 #include "main.h"
 /**
   * set_bit - sets
-  * @n: Pointer 
-  * @index: Index 
+  * @n: Pointer
+  * @index: Index
   * Return: 1 if it works, otherwise -1.
   */
 int set_bit(unsigned long int *n, unsigned int index)
