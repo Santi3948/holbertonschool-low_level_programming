@@ -24,7 +24,16 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int ui = 0;
 	int j = 0, i;
 
-	for (i = strlen(b) - 1; i >= 0; i--, j++)
+	if (!b)
+		return (ui);
+
+	for (i = 0; b[i]; i++)
+	{
+		if (b[len] != '0' && b[len] != '1')
+			return (0);
+	}
+
+	for (; i >= 0; i--, j++)
 	{
 		if (b[i] == '1')
 		ui += _pow(2, j);
