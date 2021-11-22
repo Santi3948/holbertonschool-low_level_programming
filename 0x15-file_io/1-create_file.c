@@ -11,11 +11,12 @@ int create_file(const char *filename, char *text_content)
 {
 	int aux, x, i;
 
-	aux = open(filename, O_CREAT | O_RDWR | O_TRUNC, 600);
+	aux = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	for (i = 0; text_content[i]; i++)
 		;
 	x = write(aux, text_content, i);
 	if (x == -1)
 		return (-1);
+	close(aux);
 	return (1);
 }
