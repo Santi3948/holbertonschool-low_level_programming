@@ -10,12 +10,17 @@
 int create_file(const char *filename, char *text_content)
 {
 	int aux, x, i;
-	
+
 	if (!filename)
 		return (-1);
 	aux = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	if (aux == -1)
 		return (-1);
+	if (!text_content)
+	{
+		close(aux);
+		return (1);
+	}
 	for (i = 0; text_content[i]; i++)
 		;
 	x = write(aux, text_content, i);
