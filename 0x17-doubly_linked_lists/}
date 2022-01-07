@@ -1,0 +1,14 @@
+#include "lists.h"
+#include <stdlib.h>
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
+{
+	dlistint_t *aux = malloc(sizeof(head));
+	if(!aux)
+		return (NULL);
+	aux->next = NULL;
+	aux->n = n;
+	aux->prev = *head;
+    while(head -> next)
+        *head = (*head)->next;
+	return (*head);
+}
