@@ -36,11 +36,13 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 				aux->prev->next = aux->next;
 			if (aux->next)
 				aux->next->prev = aux->prev;
-			free(aux);
-			return (1);
+			break;
 		}
 		aux = aux->next;
 		i++;
-		}
+	}
+	if (aux == *head)
+		*head = aux->next;
+	free(aux);
 	return (1);
 }
