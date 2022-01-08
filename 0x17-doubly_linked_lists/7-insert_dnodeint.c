@@ -28,6 +28,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	size_t size = dlistint_len(*h);
 	dlistint_t *aux2 = malloc(sizeof(dlistint_t));
 
+	if (!h)
+		return (NULL);
 	aux2->n = n;
 	if (!aux2)
 		return (NULL);
