@@ -36,6 +36,7 @@ hash_node_t *add_node(hash_node_t **head, const char *key, const char *value)
 	{
 		if (strcmp(key, tmp->key) == 0)
 		{
+			free(tmp->value);
 			tmp->value = strdup(value);
 			return (tmp);
 		}
