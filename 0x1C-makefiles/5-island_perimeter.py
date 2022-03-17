@@ -5,6 +5,7 @@
 
 
 def island_perimeter(grid):
+    "island_perimeter def"
     i = 1
     perimeter = 0
     while i < len(grid):
