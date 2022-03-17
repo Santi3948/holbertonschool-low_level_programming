@@ -6,21 +6,17 @@
 
 def island_perimeter(grid):
     "island_perimeter def"
-    i = 1
     perimeter = 0
-    while i < len(grid):
-        j = 1
-        while j < len(grid[i]):
-            if grid[i][j] and grid[i][j] == 1:
+    for lis in range(len(grid)):
+        for item in range(len(grid[lis])):
+            if grid[lis][item] == 1:
                 perimeter += 4
-                if grid[i - 1][j] and grid[i - 1][j] == 1:
+                if grid[lis][item + 1] and grid[lis][item + 1] == 1:
                     perimeter -= 1
-                if grid[i + 1][j] and grid[i + 1][j] == 1:
+                if grid[lis][item - 1] and grid[lis][item - 1] == 1:
                     perimeter -= 1
-                if grid[i][j - 1] and grid[i][j - 1] == 1:
+                if grid[lis + 1][item] and grid[lis + 1][item] == 1:
                     perimeter -= 1
-                if grid[i][j + 1] and grid[i][j + 1] == 1:
+                if grid[lis - 1][item] and grid[lis - 1][item] == 1:
                     perimeter -= 1
-            j += 1
-        i += 1
     return perimeter
