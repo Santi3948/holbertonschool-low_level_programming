@@ -11,20 +11,29 @@ int binarySearch(int arr[], int l, int r, int x)
 {
 	int i;
 
-	if (r >= l) {
+	if (r >= l)
+	{
 		int mid = l + (r - l) / 2;
- 	printf("Searching in array: ");
-	for (i = l; i < r; i++)
-		printf("%d, ", arr[i]);
-	printf("%d\n", arr[i]);
-        if (arr[mid] == x)
-            return mid;
-        if (arr[mid] > x)
-            return binarySearch(arr, l, mid - 1, x);
-        return binarySearch(arr, mid + 1, r, x);
-    }
-    return -1;
+
+		printf("Searching in array: ");
+		for (i = l; i < r; i++)
+		{
+			printf("%d, ", arr[i]);
+		}
+		printf("%d\n", arr[i]);
+		if (arr[mid] == x)
+		{
+			return (mid);
+		}
+		if (arr[mid] > x)
+		{
+			return (binarySearch(arr, l, mid - 1, x));
+		}
+		return (binarySearch(arr, mid + 1, r, x));
+	}
+	return (-1);
 }
+
 /**
  * binary_search - searches for a value in a sorted array of integers using BSA
  * @array: pointer to the first element of the array to search in
